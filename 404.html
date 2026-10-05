@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flick Event</title>
+    <meta name="description" content="View a shared Flick pickleball event.">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell" aria-live="polite">
+      <section class="event-panel">
+        <p class="eyebrow">Flick</p>
+        <h1 id="title">Shared pickleball event</h1>
+        <p id="summary" class="summary">Open this link from the Flick app or scan an event QR code.</p>
+        <div id="details" class="details" hidden></div>
+        <div id="status" class="status">Loading event...</div>
+        <div class="actions">
+          <a id="openApp" class="primary-action" href="#">Open in Flick</a>
+        </div>
+      </section>
+    </main>
+    <script src="/event.js" defer></script>
+  </body>
+</html>
